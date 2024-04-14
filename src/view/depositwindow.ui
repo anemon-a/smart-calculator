@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DepositWindow</class>
+ <widget class="QDialog" name="DepositWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>484</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #ddc6f5;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="9" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QDateEdit" name="date_withdrawal">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="withdrawal">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="add_withdrawal">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: rgb(189, 156, 209);
+  color: white; 
+  border: 1px solid gray;
+font: 14pt &quot;Comic Sans MS&quot;;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}</string>
+         </property>
+         <property name="text">
+          <string>Добавить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Список частичных снятий:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="toolTip">
+        <string extracomment="Путь к ssp файлу"/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Список пополнений:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Налоговая ставка:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Периодичность выплат:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QDateEdit" name="start_date">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white; </string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="interest_rate">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QSpinBox" name="deposit_term">
+         <property name="styleSheet">
+          <string>color: rgb(126, 90, 148);
+background-color: white;</string>
+         </property>
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="type_term">
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+color: rgb(126, 90, 148);</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Дней</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Месяцев</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Лет</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Начало срока:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QDateEdit" name="date_replenishment">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="replenishment">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="add_replenishment">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+  background-color: rgb(189, 156, 209);
+  color: white; 
+  border: 1px solid gray;
+font: 14pt &quot;Comic Sans MS&quot;;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}</string>
+         </property>
+         <property name="text">
+          <string>Добавить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="8" column="2">
+      <widget class="QTableWidget" name="replenishments">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Дата</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Сумма</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QComboBox" name="payment_periodicity_type">
+       <property name="styleSheet">
+        <string notr="true">background-color: white;
+color: rgb(126, 90, 148);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Каждый день</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Каждую неделю</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Раз в месяц</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Раз в квартал</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Раз в полгода</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Раз в год</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>В конце срока</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Сумма вклада</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="deposit_amount">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Процентная ставка:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="tax_rate">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Срок размещения:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QTableWidget" name="withdrawals">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>Дата</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Сумма</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QRadioButton" name="capitalization">
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Капитализация процентов</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="button_calculate">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  background-color: rgb(189, 156, 209);
+  color: white; 
+  border: 1px solid gray;
+font: 14pt &quot;Comic Sans MS&quot;;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}</string>
+     </property>
+     <property name="text">
+      <string>Расчитать</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="deposit_amount_by_end">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Начисленные проценты:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="tax_amount">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Сумма налога:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 14pt &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Сумма на вкладе к концу срока:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="accrued_interest">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(126, 90, 148);
+background-color: white;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
